@@ -6,95 +6,507 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Personal Portfolio</title>
 		<link rel="stylesheet" href="styles.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 	</head>
 
 	<body>
-		<header>
-			<h1 class="header-title">Dijana Kalapos Ratic</h1>
-		</header>
+		<div class="container container--header">
+			<header class="header">
+				<h1 class="header__title">Dijana Kalapos Ratic</h1>
+				<nav id="navbar" class="header__navbar">
+					<ul class="header__navbar__list">
+						<li class="header__navbar__list__item">
+							<a href="#welcome-section" class="header__navbar__list__item__link">About</a>
+						</li>
+						<li class="header__navbar__list__item">
+							<a href="#projects" class="header__navbar__list__item__link">Projects</a>
+						</li>
+						<li class="header__navbar__list__item">
+							<a href="#" class="header__navbar__list__item__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
 
-		<nav id="navbar" class="nav">
-			<ul class="nav-list">
-				<li>
-					<a href="#welcome-section">About</a>
-				</li>
-				<li>
-					<a href="#skills">Skills</a>
-				</li>
-				<li>
-					<a href="#projects">Projects</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="container container--about">
+			<section id="welcome-section" class="about">
+				<h3 class="about__subtitle">Hello there, I am</h3>
+				<h1 class="about__title">Dijana Kalapos Ratic</h1>
+				<h3 class="about__subtitle">Frintend Developer</h3>
+				<p class="about__description">
+					Frontend Developer with a basic understanding of HTML, CSS, and JavaScript. My passion lies in transforming design concepts into pixel-perfect, responsive web interfaces. With a commitment to clean code and an eye for
+					detail, I strive to create seamless user experiences. My goal is to make the web more visually appealing and user-friendly one project at a time.
+				</p>
+			</section>
+		</div>
 
-		<section id="welcome-section" class="welcome-section">
-			<p>Hello there, I am a</p>
-			<h1>Frontened Developer</h1>
-			<p>based in Subotica, Serbia</p>
-		</section>
+		<div class="container container--projects">
+			<section id="projects" class="projects">
+				<div class="projects__grid">
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile">Cafe Menu</h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="https://dijanakalaposratic.github.io/fcc-rwd-p02-cafe-menu/" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+					<div class="projects__grid__card">
+						<img src="" alt="" class="projects__grid__card__img" />
+						<h1 class="projects__grid__card__title project-tile"></h1>
+						<p class="projects__grid__card__description">exp. FLEXBOX, GIRD, RWD, WCAG, TYPOGRAPHY, etc.</p>
+						<ul class="projects__grid__card__skills">
+							<li class="projects__grid__card__skills__skill">CLI</li>
+							<li class="projects__grid__card__skills__skill">Terminal</li>
+							<li class="projects__grid__card__skills__skill">Zsh</li>
+							<li class="projects__grid__card__skills__skill">Git</li>
+							<li class="projects__grid__card__skills__skill">Github</li>
+							<li class="projects__grid__card__skills__skill">VSC</li>
+							<li class="projects__grid__card__skills__skill">HTML</li>
+							<li class="projects__grid__card__skills__skill">CSS</li>
+						</ul>
+						<ul class="projects__grid__card__links">
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Code</a></li>
+							<li class="projects__grid__card__links__link"><a href="" target="_blank">Preview</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
 
-		<section id="skills" class="skills-section">
-			<p>My skills</p>
-		</section>
-
+		<!-- 
 		<section id="projects" class="projects-section">
-			<h2 class="projects-section-header">These are some of my projects</h2>
+			<h2 class="projects-section-header">Take a look at some of my projects</h2>
 
 			<div class="projects-grid">
-				<a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project" />
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p02-cafe-menu/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
+					<p class="project-title">
+						<span class="code">&lt;</span>
+						Cafe Menu
+						<span class="code">&#47;&gt;</span>
+					</p>
+				</a>
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p03-css-color-markers/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
+					<p class="project-title">
+						<span class="code">&lt;</span>
+						CSS Color Markers
+						<span class="code">&#47;&gt;</span>
+					</p>
+				</a>
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p04-registration-form/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
+					<p class="project-title">
+						<span class="code">&lt;</span>
+						Registration Form
+						<span class="code">&#47;&gt;</span>
+					</p>
+				</a>
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p05-survey-form/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
+					<p class="project-title">
+						<span class="code">&lt;</span>
+						Survey Form
+						<span class="code">&#47;&gt;</span>
+					</p>
+				</a>
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p06-rothko-painting/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
+					<p class="project-title">
+						<span class="code">&lt;</span>
+						Rothko Painting
+						<span class="code">&#47;&gt;</span>
+					</p>
+				</a>
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p07-photo-gallery/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
+					<p class="project-title">
+						<span class="code">&lt;</span>
+						CSSFlexbox Photo Gallery
+						<span class="code">&#47;&gt;</span>
+					</p>
+				</a>
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p08-nutrition-label/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
+					<p class="project-title">
+						<span class="code">&lt;</span>
+						Nutrition Label
+						<span class="code">&#47;&gt;</span>
+					</p>
+				</a>
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p09-quiz/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
+					<p class="project-title">
+						<span class="code">&lt;</span>
+						Quiz
+						<span class="code">&#47;&gt;</span>
+					</p>
+				</a>
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p10-tribute-page/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
 					<p class="project-title">
 						<span class="code">&lt;</span>
 						Tribute Page
 						<span class="code">&#47;&gt;</span>
 					</p>
 				</a>
-				<a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project" />
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p11-balance-sheet/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
 					<p class="project-title">
 						<span class="code">&lt;</span>
-						Random Quote Machine
+						Balance Sheet
 						<span class="code">&#47;&gt;</span>
 					</p>
 				</a>
-				<a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project" />
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p12-cat-painting/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
 					<p class="project-title">
 						<span class="code">&lt;</span>
-						JavaScript Calculator
+						Cat Painting
 						<span class="code">&#47;&gt;</span>
 					</p>
 				</a>
-				<a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project" />
+
+				<a href="https://dijanakalaposratic.github.io/fcc-rwd-p13-piano/" target="_blank" class="project project-tile">
+					<img class="project-image" src="" alt="project" />
 					<p class="project-title">
 						<span class="code">&lt;</span>
-						Map Data Across the Globe
-						<span class="code">&#47;&gt;</span>
-					</p>
-				</a>
-				<a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="project" />
-					<p class="project-title">
-						<span class="code">&lt;</span>
-						Wikipedia Viewer
-						<span class="code">&#47;&gt;</span>
-					</p>
-				</a>
-				<a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project" />
-					<p class="project-title">
-						<span class="code">&lt;</span>
-						Tic Tac Toe Game
+						Piano
 						<span class="code">&#47;&gt;</span>
 					</p>
 				</a>
 			</div>
 
-			<a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i></a>
-		</section>
+		</section> -->
 	</body>
 </html>
