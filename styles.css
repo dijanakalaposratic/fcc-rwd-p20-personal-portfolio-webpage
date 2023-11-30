@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: "Poppins", sans-serif;
+	border: 1px solid red;
 }
 
 /* HEADER */
@@ -40,6 +41,8 @@
 
 /* MAIN */
 
+/* ABOUT */
+
 .container--about {
 	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8)), url("./img/hero.jpg");
 	background-size: cover;
@@ -49,6 +52,7 @@
 .about {
 	height: 100vh;
 	width: 80%;
+	max-width: 1024px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -57,4 +61,19 @@
 
 .about__description {
 	text-align: justify;
+}
+
+/* PROJECTS */
+.container--projects {
+	margin: 0 auto;
+}
+.projects__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	grid-template-rows: repeat(6, 400px);
+	grid-gap: calc((100% - (3 * 300px)) / 2);
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+	margin-bottom: 6em;
 }
