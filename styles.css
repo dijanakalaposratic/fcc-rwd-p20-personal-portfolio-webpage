@@ -90,3 +90,8 @@
 	background: #eee;
 	border-radius: 10px;
 }
+
+.projects__grid__card_img {
+	width: 100%;
+	height: 50%;
+}
