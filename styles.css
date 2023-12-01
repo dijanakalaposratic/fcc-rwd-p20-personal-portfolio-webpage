@@ -126,3 +126,11 @@
 	width: 100%;
 	height: auto;
 }
+
+.projects__grid__card__skills__skill {
+	width: 5em;
+}
+
+.projects__grid__card__skills__skill:first-of-type {
+	padding-left: 0;
+}
