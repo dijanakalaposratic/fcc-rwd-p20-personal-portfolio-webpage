@@ -8,26 +8,29 @@
 		<link rel="stylesheet" href="styles.css" />
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+		<!-- font-family: 'Montserrat', sans-serif; -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- font-family: 'Open Sans', sans-serif; -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		<div class="container container--header">
 			<header class="header">
-				<h1 class="header__title">Dijana Kalapos Ratic</h1>
 				<nav id="navbar" class="header__navbar">
 					<ul class="header__navbar__list">
 						<li class="header__navbar__list__item">
-							<a href="#welcome-section" class="header__navbar__list__item__link">About</a>
+							<a class="header__navbar__list__item__link" href="#welcome-section">About</a>
 						</li>
 						<li class="header__navbar__list__item">
-							<a href="#projects" class="header__navbar__list__item__link">Projects</a>
+							<a class="header__navbar__list__item__link" href="#projects">Projects</a>
 						</li>
 						<li class="header__navbar__list__item">
-							<a href="#contact" class="header__navbar__list__item__link">Contact</a>
+							<a class="header__navbar__list__item__link" href="#contact">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -35,10 +38,10 @@
 		</div>
 
 		<div class="container container--about">
-			<section id="welcome-section" class="about">
+			<section id="welcome-section" class="about padd-top">
 				<h3 class="about__subtitle">Hello there, I am</h3>
 				<h1 class="about__title">Dijana Kalapos Ratic</h1>
-				<h3 class="about__subtitle">Frintend Developer</h3>
+				<h3 class="about__subtitle">Frontend Developer</h3>
 				<p class="about__description">
 					Frontend Developer with a basic understanding of HTML, CSS, and JavaScript. My passion lies in transforming design concepts into pixel-perfect, responsive web interfaces. With a commitment to clean code and an eye for
 					detail, I strive to create seamless user experiences. My goal is to make the web more visually appealing and user-friendly one project at a time.
@@ -47,7 +50,7 @@
 		</div>
 
 		<div class="container container--projects">
-			<section id="projects" class="projects__grid">
+			<section id="projects" class="projects__grid padd-top">
 					<div class="projects__grid__card">
 						<img src="https://i.postimg.cc/xd3z75Jp/Screenshot-2023-11-27-at-23-16-54.png" alt="webpage-preview" class="projects__grid__card__img" />
 						<h1 class="projects__grid__card__title project-tile">Cafe Menu</h1>
@@ -150,7 +153,7 @@
 
 					<div class="projects__grid__card">
 						<img src="https://i.postimg.cc/gJPnt13n/Screenshot-2023-11-28-at-21-19-06.png" alt="webpage-preview" class="projects__grid__card__img" />
-						<h1 class="projects__grid__card__title project-tile">CSS Flexbox Photo Gallery</h1>
+						<h1 class="projects__grid__card__title project-tile">Flexbox Photo Gallery</h1>
 						<p class="projects__grid__card__description">Crafted a responsive photo gallery webpage with the power of Flexbox, ensuring a seamless display on any screen size. Employed HTML and CSS to weave together design and functionality. Leveraged Git and GitHub for version control, while Visual Studio Code, CLI, Terminal, and Zsh contributed to an efficient development workflow. The result: a visually appealing project that adapts gracefully to various devices, marrying design finesse with coding precision.</p>
 						<ul class="projects__grid__card__skills">
 							<li class="projects__grid__card__skills__skill">CLI</li>
@@ -411,7 +414,7 @@
 		</div>
 
 		<div class="container container--contact">
-			<section id="contact" class="contact">
+			<section id="contact" class="contact padd-top">
 				<p class="contact__body">Let us join our ideas and strengths!</p>
 				<ul class="contact__list">
 					<li class="contact__list__item"><a class="contact__list__item__link" href="https://www.linkedin.com/in/dijana-kalapos-ratic/" target="_blank" id="profile-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
@@ -424,7 +427,7 @@
 		</div>
 
 		<div class="container container--footer">
-			<footer class="footer">
+			<footer class="footer padd-top">
 				<p class="footer__body">&copy; 2023 Dijana Kalapos Ratic. All rights reserved.</p>
 			</footer>
 		</div>

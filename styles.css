@@ -1,140 +1,140 @@
-* {
-	/* border: 1px solid red; */
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: "Poppins", sans-serif;
-	border: 1px solid red;
+/* VARIABLES */
+
+:root {
+	--black: #000000;
+	--dark: #222222;
+	--dark-gold: #91683c;
+	--gold: #c19e77;
+	--light-gold: #d4c0ab;
+	--linen: #e8dcd0;
+	--off-white: #f1f1f1;
+	--white: #ffffff;
 }
 
-/* HEADER */
+/* RESET */
+
+* {
+	margin: 0;
+	/* border: 1px solid black; */
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* GENERAL */
+
+html,
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+/* TYPOGRAPHY */
+
+/* Header */
 
 .container--header {
-	background: mediumaquamarine;
-}
-
-.header {
-	width: 80%;
-	margin: 0 auto;
-}
-
-.header,
-.header__navbar__list {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.4rem;
+	font-weight: 500;
 }
 
 .header__navbar__list__item {
 	list-style: none;
-	padding-left: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
-
-/* .header__navbar__list__item:last-of-type {
-	padding-right: 2em;
-} */
 
 .header__navbar__list__item__link {
 	text-decoration: none;
-	color: black;
+	color: var(--dark-gold);
 }
 
-/* MAIN */
+.header__navbar__list__item__link:active,
+.header__navbar__list__item__link:hover {
+	color: var(--gold);
+}
 
 /* ABOUT */
 
+.about__title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 4rem;
+	color: var(--dark-gold);
+	/* text-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px, rgba(0, 0, 0, 0.3) 0px 6px 6px; */
+}
+
+.about__subtitle {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2rem;
+	padding-left: 0.1em;
+	color: var(--gold);
+	/* text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 2px 2px; */
+}
+
+.about__description {
+	font-size: 1.4rem;
+	padding-top: 2em;
+	padding-left: 0.18em;
+}
+
+/* LAYOUT */
+
+/* General */
+
+.padd-top {
+	padding-top: 4em;
+}
+
+/* Header */
+
+.container--header {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	background: var(--light-gold);
+}
+
+.header {
+	width: 80%;
+	max-width: 1440px;
+}
+
+.header__navbar__list {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header__navbar__list__item {
+	padding-left: 1em;
+}
+
+.header__navbar__list__item:first-of-type {
+	padding-left: 0;
+}
+
+/* About */
+
 .container--about {
-	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8)), url("./img/hero.jpg");
+	background: url(https://i.postimg.cc/zXtVKMNR/hugo-barbosa-Tn-G2q8-Ft-Xsg-unsplash-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
 	height: 100vh;
 }
 
 .about {
-	height: 100vh;
 	width: 80%;
-	max-width: 1024px;
-	margin: 0 auto;
+	max-width: 1440px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 }
 
 .about__description {
 	text-align: justify;
 }
 
-/* PROJECTS */
-.container--projects {
-	margin: 0 auto;
-}
-.projects__grid {
-	display: grid;
-	grid-template-columns: repeat(3, 300px);
-	grid-template-rows: repeat(6, 400px);
-	grid-gap: calc((100% - (3 * 300px)) / 2);
-	width: 80%;
-	max-width: 1024px;
-	margin: 0 auto;
-	margin-bottom: 2em;
-}
-
-.projects__grid__card {
-	display: flex;
-	flex-direction: column;
-	width: 300px;
-	max-width: 300px;
-	height: 400px;
-	max-height: 400pc;
-	padding: 2em;
-	box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-	background: #eee;
-	border-radius: 10px;
-}
-
-.projects__grid__card__img {
-	width: 100%;
-	max-height: 30%;
-	object-fit: cover;
-}
-
-.projects__grid__card__title {
-	font-size: 1.2rem;
-	text-align: center;
-	font-weight: 600;
-	padding: 0.2em;
-}
-
-.projects__grid__card__description {
-	width: 100%;
-	height: 30%;
-	max-height: 30%;
-	opacity: 0.5;
-	font-size: 0.8rem;
-	text-align: justify;
-	max-lines: 3;
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 3;
-}
-
-.projects__grid__card__skills {
-	display: flex;
-	flex-wrap: wrap;
-	font-size: 0.9rem;
-	list-style: none;
-	width: 100%;
-	height: auto;
-}
-
-.projects__grid__card__skills__skill {
-	width: 5em;
-}
-
-.projects__grid__card__skills__skill:first-of-type {
-	padding-left: 0;
-}
-
-.projects__grid__card__links {
-	font-size: 0.8rem;
-}
+/* Projects */
