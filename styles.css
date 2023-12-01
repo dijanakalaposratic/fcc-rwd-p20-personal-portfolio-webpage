@@ -117,3 +117,12 @@
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 3;
 }
+
+.projects__grid__card__skills {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.9rem;
+	list-style: none;
+	width: 100%;
+	height: auto;
+}
