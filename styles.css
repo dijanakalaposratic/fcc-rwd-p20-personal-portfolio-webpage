@@ -161,3 +161,8 @@ body {
 	max-height: 500px;
 	padding: 2em;
 }
+
+.projects__grid__card__img {
+	width: 100%;
+	height: 50%;
+}
