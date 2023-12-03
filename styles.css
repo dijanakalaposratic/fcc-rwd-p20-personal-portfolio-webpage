@@ -143,3 +143,11 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
+.projects__grid {
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
+	/* gap: calc((100%-1200px) / 2); */
+	/* gap: 4em; */
+}
