@@ -94,6 +94,12 @@ body {
 	font-size: 0.9rem;
 }
 
+/* .projects__grid__card__links__link,
+.projects__grid__card__links__link:visited {
+	color: var(--dark);
+	text-decoration: none;
+} */
+
 /* LAYOUT */
 
 /* General */
@@ -175,10 +181,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	border: 2px solid var(--dark-gold);
+	background: var(--off-white);
+	box-shadow: 0 10px 30px -10px;
 	border-radius: 10px;
 	padding: 1.5em;
 	width: 300px;
-	height: 600px;
+	height: 500px;
 }
 
 .projects__grid__card__img {
@@ -186,6 +194,7 @@ body {
 	height: 30%;
 	object-fit: cover;
 	border: 1px solid var(--dark-gold);
+	/* box-shadow: 0 10px 30px -10px; */
 	border-radius: 10px;
 }
 
@@ -194,7 +203,7 @@ body {
 }
 
 .projects__grid__card__description {
-	height: 200px;
+	height: 160px;
 }
 .projects__grid__card__skills {
 	list-style: none;
@@ -217,9 +226,9 @@ body {
 .projects__grid__card__links {
 	list-style: none;
 	text-align: center;
-	margin-top: 0.5em;
+	margin-top: 0.2em;
 }
 
 .projects__grid__card__links__link:first-of-type {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.2em;
 }
