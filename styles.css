@@ -168,7 +168,7 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 2em;
+	gap: 3em;
 }
 
 .projects__grid__card {
@@ -194,7 +194,7 @@ body {
 }
 
 .projects__grid__card__description {
-	height: 40%;
+	height: 200px;
 }
 .projects__grid__card__skills {
 	list-style: none;
@@ -218,4 +218,8 @@ body {
 	list-style: none;
 	text-align: center;
 	margin-top: 0.5em;
+}
+
+.projects__grid__card__links__link:first-of-type {
+	margin-bottom: 0.5em;
 }
