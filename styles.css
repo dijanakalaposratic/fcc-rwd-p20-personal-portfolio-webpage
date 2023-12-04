@@ -203,3 +203,19 @@ body {
 	flex-wrap: wrap;
 	margin-top: 0.5em;
 }
+.projects__grid__card__skills__skill {
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	margin-left: 1em;
+	margin-bottom: 0.5em;
+}
+
+.projects__grid__card__skills__skill:first-of-type {
+	margin-left: 0;
+}
+
+.projects__grid__card__links {
+	list-style: none;
+	text-align: center;
+	margin-top: 0.5em;
+}
