@@ -196,3 +196,10 @@ body {
 .projects__grid__card__description {
 	height: 40%;
 }
+.projects__grid__card__skills {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 0.5em;
+}
