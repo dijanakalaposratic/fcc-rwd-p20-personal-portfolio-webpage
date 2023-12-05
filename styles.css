@@ -117,12 +117,21 @@ body {
 	margin-bottom: 1em;
 }
 
+.contact__list__item {
+	font-size: 1.2rem;
+}
+
 .contact__list__item__link:hover,
 .contact__list__item__link:visited {
 	color: var(--dark-gold);
 	background: var(--off-white);
 	border-radius: 8px;
 	padding: 0.2em;
+}
+
+.footer__body {
+	font-size: 1rem;
+	color: var(--gold);
 }
 
 /* LAYOUT */
@@ -191,6 +200,7 @@ body {
 	background: var(--linen);
 	display: flex;
 	justify-content: center;
+	padding-bottom: 3em;
 }
 
 .projects__grid {
@@ -272,4 +282,10 @@ body {
 
 .contact__list__item {
 	margin-left: 1em;
+}
+
+.container--footer {
+	background: var(--white);
+	display: flex;
+	justify-content: center;
 }
