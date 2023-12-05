@@ -289,3 +289,7 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
+.footer__body {
+	margin-bottom: 3em;
+}
