@@ -2,12 +2,12 @@
 
 :root {
 	--black: #000000;
-	--dark: #222222;
-	--dark-gold: #91683c;
-	--gold: #c19e77;
-	--light-gold: #d4c0ab;
-	--linen: #e8dcd0;
-	--off-white: #f1f1f1;
+	--dark: #333333;
+	--main-color-dark: #240046;
+	--main-color-medium: #7b2cbf;
+	--main-color-light: #c77dff;
+	--main-color-lighter: #ebc9ff;
+	--off-white: #eeeeee;
 	--white: #ffffff;
 }
 
@@ -45,12 +45,12 @@ body {
 
 .header__navbar__list__item__link {
 	text-decoration: none;
-	color: var(--dark-gold);
+	color: var(--white);
 }
 
 .header__navbar__list__item__link:active,
 .header__navbar__list__item__link:hover {
-	color: var(--gold);
+	color: var(--main-color-medium);
 }
 
 /* ABOUT */
@@ -58,7 +58,7 @@ body {
 .about__title {
 	font-family: "Montserrat", sans-serif;
 	font-size: 4rem;
-	color: var(--dark-gold);
+	color: var(--main-color-dark);
 	/* text-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px, rgba(0, 0, 0, 0.3) 0px 6px 6px; */
 }
 
@@ -66,7 +66,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 2rem;
 	padding-left: 0.1em;
-	color: var(--gold);
+	color: var(--main-color-medium);
 	/* text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 2px 2px; */
 }
 
@@ -78,7 +78,8 @@ body {
 
 .projects__grid__card__title {
 	font-family: "Montserrat", sans-serif;
-	color: #91683c;
+	color: var(--off-white);
+	font-weight: 5\00;
 	font-size: 1.5rem;
 	text-align: center;
 }
@@ -86,18 +87,19 @@ body {
 .projects__grid__card__description {
 	font-size: 0.8rem;
 	text-align: justify;
+	color: var(--white);
 }
 
 .projects__grid__card__skills__skill {
-	background: var(--dark-gold);
-	color: var(--linen);
+	background: var(--main-color-dark);
+	color: var(--white);
 	font-size: 0.9rem;
 }
 
 .projects__grid__card__links__link,
 .projects__grid__card__links__link:visited {
-	color: var(--dark-gold);
-	background: var(--linen);
+	color: var(--off-white);
+	background: var(--main-color-lighter);
 	border-radius: 8px;
 	padding: 0.2em;
 }
@@ -111,7 +113,7 @@ body {
 .contact__body {
 	font-size: 2rem;
 	font-family: "Montserrat", sans-serif;
-	color: var(--dark-gold);
+	color: var(--main-color-dark);
 	font-weight: 600;
 	text-align: center;
 	margin-bottom: 1em;
@@ -123,7 +125,7 @@ body {
 
 .contact__list__item__link:hover,
 .contact__list__item__link:visited {
-	color: var(--dark-gold);
+	color: var(--main-color-dark);
 	background: var(--off-white);
 	border-radius: 8px;
 	padding: 0.2em;
@@ -131,7 +133,7 @@ body {
 
 .footer__body {
 	font-size: 1rem;
-	color: var(--gold);
+	color: var(--white);
 }
 
 /* LAYOUT */
@@ -149,7 +151,7 @@ body {
 	justify-content: center;
 	position: fixed;
 	width: 100%;
-	background: var(--light-gold);
+	background: var(--dark);
 }
 
 .header {
@@ -197,7 +199,7 @@ body {
 
 /* Projects */
 .container--projects {
-	background: var(--linen);
+	background: var(--white);
 	display: flex;
 	justify-content: center;
 	padding-bottom: 3em;
@@ -215,26 +217,21 @@ body {
 .projects__grid__card {
 	display: flex;
 	flex-direction: column;
-	border: 2px solid var(--dark-gold);
-	background: var(--off-white);
+	background: var(--dark);
 	box-shadow: 0 10px 30px -10px;
-	border-radius: 10px;
-	padding: 1.5em;
+	padding: 2em;
 	width: 300px;
 	height: 500px;
 }
 
 .projects__grid__card__img {
 	width: 100%;
-	height: 30%;
+	height: 150px;
 	object-fit: cover;
-	border: 1px solid var(--dark-gold);
-	/* box-shadow: 0 10px 30px -10px; */
-	border-radius: 10px;
 }
 
 .projects__grid__card__title {
-	padding: 0.4em;
+	padding: 1.2em 0;
 }
 
 .projects__grid__card__description {
@@ -272,6 +269,7 @@ body {
 	background: var(--white);
 	display: flex;
 	justify-content: center;
+	height: 100vh;
 }
 
 .contact__list {
@@ -285,7 +283,7 @@ body {
 }
 
 .container--footer {
-	background: var(--white);
+	background: var(--dark);
 	display: flex;
 	justify-content: center;
 }
