@@ -15,7 +15,7 @@
 
 * {
 	margin: 0;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -137,7 +137,7 @@ body {
 
 /* LAYOUT */
 
-/* General */
+/* General  */
 
 .padd-top {
 	padding-top: 10em;
@@ -151,6 +151,7 @@ body {
 	position: fixed;
 	width: 100%;
 	background: var(--dark);
+	z-index: 5;
 }
 
 .header {
@@ -214,10 +215,18 @@ body {
 	text-align: justify;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 	.about {
-		transform: scale(0.9);
 		width: 90%;
+	}
+	.about__subtitle {
+		font-size: 2rem;
+	}
+	.about__title {
+		font-size: 3rem;
+	}
+	.about__description {
+		font-size: 1rem;
 	}
 }
 
@@ -286,6 +295,24 @@ body {
 	padding: 0.4em 1em;
 }
 
+@media screen and (max-width: 400px) {
+	.projects__grid__card {
+		height: 580px;
+	}
+	.projects__grid__card__links__link {
+		font-size: 0.9rem;
+	}
+	.projects__grid__card__links {
+		padding-top: 2em;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.projects__grid__card__links__link {
+		font-size: 0.8rem;
+	}
+}
+
 .container--contact {
 	background: var(--white);
 	display: flex;
@@ -315,25 +342,57 @@ body {
 	text-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
 }
 
+@media screen and (max-width: 1100px) {
+	.contact__list {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contact__body {
+		font-size: 2rem;
+	}
+	.contact__list__item {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.padd-top {
+		padding-top: 5em;
+	}
+}
+
 .container--footer {
 	background: var(--dark);
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
-
-/* @media screen and (max-width: 870px) {
-	.container--contact {
-		transform: scale(0.7);
-		width: 80%;
-	}
-
-	.contact__body {
-		max-width: 80%;
-		overflow-wrap: break-word;
-		text-align: center;
-	}
-} */
 
 .footer__body {
 	margin: 3em;
+}
+@media screen and (max-width: 500px) {
+	.footer {
+		transform: scale(0.8);
+		margin: 0;
+		width: 100%;
+	}
+	.footer__body {
+		margin: 1em 0;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.footer {
+		margin: 0;
+		width: 100%;
+	}
+	.footer__body {
+		font-size: 0.8rem;
+		text-align: center;
+	}
 }
